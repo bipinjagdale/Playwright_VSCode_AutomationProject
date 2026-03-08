@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","580","test1","chromium","2026-03-07","passed","2026-03-07","","Annotations.spec.js","",""
+"","265","API PUT test","chromium","2026-03-07","passed","2026-03-07","","APITest.spec.js","",""
+"","2758","login to demoblaze using POM","chromium","2026-03-07","failed","2026-03-07","","POMTest.spec.js","",""
+"","106","API GET test","chromium","2026-03-07","passed","2026-03-07","","APITest.spec.js","",""
+"","98","API POST test","chromium","2026-03-07","passed","2026-03-07","","APITest.spec.js","",""
+"","103","API DELETE test","chromium","2026-03-07","passed","2026-03-07","","APITest.spec.js","",""
+"","7782","Tahandling table","chromium","2026-03-07","passed","2026-03-07","","Table.spec.js","",""
