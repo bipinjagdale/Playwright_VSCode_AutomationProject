@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import AllureReporter from 'allure-playwright';
 
 /**
  * Read environment variables from file.
@@ -31,8 +32,8 @@ export default defineConfig({
   //reporter: 'html',
   //reporter: "allure-playwright",
 reporter: [
-    ['list'],
-    ['html', { outputFolder: 'playwright-report', open: 'never' }]
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['allure-playwright', { outputFolder: 'allure-results' }],
   ],
   //reporter: [['junit', { outputFile: 'results.xml' }]],
   //reporter: 'html',
@@ -40,7 +41,7 @@ reporter: [
   //reporter: 'list',
   //reporter: 'line',
   //reporter: 'dot',
-  reporter: 'allure-playwright',
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
