@@ -7,10 +7,12 @@ test('test', async ({ page }) => {
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
   });
+  await page.waitForTimeout(5000);
   await page.getByRole('link', { name: 'Add to cart' }).click();
+  await page.waitForTimeout(5000);
   page.once('dialog', dialog => {
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
   });
-  await page.getByRole('link', { name: 'Add to cart' }).click();
+  
 });

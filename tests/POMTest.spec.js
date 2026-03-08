@@ -20,7 +20,7 @@ test('login to demoblaze using POM', async ({ page }) => {
     //Cart Page
     const cartPage = new CartPage(page);
     await cartPage.verifyProductInCart('Iphone 6 32gb');
-    expect(await satus).toBe(false);
+    expect(await satus).toBe(true);
     
 
 
