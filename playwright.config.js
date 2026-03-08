@@ -40,7 +40,7 @@ reporter: [
   //reporter: 'list',
   //reporter: 'line',
   //reporter: 'dot',
-  //reporter: 'allure-playwright',
+  reporter: 'allure-playwright',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
